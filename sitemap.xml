@@ -2,16 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://jpaztech.github.io/vm/win2019-jp-lpk/</loc>
+    <loc>https://jpaztech.github.io/network/appgw-troubleshooting-cert/</loc>
     
-    <lastmod>2020-06-10T01:01:30.000Z</lastmod>
+    <lastmod>2020-06-10T05:12:21.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://jpaztech.github.io/network/appgw-troubleshooting-cert/</loc>
+    <loc>https://jpaztech.github.io/vm/win2019-jp-lpk/</loc>
     
-    <lastmod>2020-06-10T00:21:29.000Z</lastmod>
+    <lastmod>2020-06-10T01:01:30.000Z</lastmod>
     
   </url>
   
@@ -65,13 +65,6 @@
   </url>
   
   <url>
-    <loc>https://jpaztech.github.io/information/test/</loc>
-    
-    <lastmod>2019-11-26T12:39:50.000Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://jpaztech.github.io/archive/application-gateway-502-error-info/</loc>
     
     <lastmod>2019-11-26T12:39:50.000Z</lastmod>
@@ -79,14 +72,14 @@
   </url>
   
   <url>
-    <loc>https://jpaztech.github.io/archive/applicationgaetway-waf-01/</loc>
+    <loc>https://jpaztech.github.io/archive/application-gateway-waf-vulnerability-detection/</loc>
     
     <lastmod>2019-11-26T12:39:50.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://jpaztech.github.io/archive/application-gateway-waf-vulnerability-detection/</loc>
+    <loc>https://jpaztech.github.io/archive/applicationgaetway-waf-01/</loc>
     
     <lastmod>2019-11-26T12:39:50.000Z</lastmod>
     
@@ -128,7 +121,7 @@
   </url>
   
   <url>
-    <loc>https://jpaztech.github.io/archive/migration_arm_to_arm/</loc>
+    <loc>https://jpaztech.github.io/archive/need-azurebox32-ico/</loc>
     
     <lastmod>2019-11-26T12:39:50.000Z</lastmod>
     
@@ -136,13 +129,6 @@
   
   <url>
     <loc>https://jpaztech.github.io/archive/monitor-io-throttoling-on-win-vm-arm/</loc>
-    
-    <lastmod>2019-11-26T12:39:50.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://jpaztech.github.io/archive/need-azurebox32-ico/</loc>
     
     <lastmod>2019-11-26T12:39:50.000Z</lastmod>
     
@@ -171,6 +157,20 @@
   
   <url>
     <loc>https://jpaztech.github.io/archive/upgrade-backup-container-asm2arm/</loc>
+    
+    <lastmod>2019-11-26T12:39:50.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://jpaztech.github.io/archive/migration_arm_to_arm/</loc>
+    
+    <lastmod>2019-11-26T12:39:50.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://jpaztech.github.io/information/test/</loc>
     
     <lastmod>2019-11-26T12:39:50.000Z</lastmod>
     
