@@ -2,16 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://jpaztech.github.io/network/appgw-troubleshooting-cert/</loc>
+    <loc>https://jpaztech.github.io/vm/win2019-jp-lpk/</loc>
     
-    <lastmod>2020-06-10T05:12:21.000Z</lastmod>
+    <lastmod>2020-06-10T10:07:31.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://jpaztech.github.io/vm/win2019-jp-lpk/</loc>
+    <loc>https://jpaztech.github.io/network/appgw-troubleshooting-cert/</loc>
     
-    <lastmod>2020-06-10T01:01:30.000Z</lastmod>
+    <lastmod>2020-06-10T05:12:21.000Z</lastmod>
     
   </url>
   
@@ -44,14 +44,14 @@
   </url>
   
   <url>
-    <loc>https://jpaztech.github.io/other/azure_technical_support_explained/</loc>
+    <loc>https://jpaztech.github.io/other/technical_support_engineer_explained/</loc>
     
     <lastmod>2019-12-15T14:44:40.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://jpaztech.github.io/other/technical_support_engineer_explained/</loc>
+    <loc>https://jpaztech.github.io/other/azure_technical_support_explained/</loc>
     
     <lastmod>2019-12-15T14:44:40.000Z</lastmod>
     
@@ -72,6 +72,13 @@
   </url>
   
   <url>
+    <loc>https://jpaztech.github.io/archive/azure-powershell-3-8-0-install/</loc>
+    
+    <lastmod>2019-11-26T12:39:50.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://jpaztech.github.io/archive/application-gateway-waf-vulnerability-detection/</loc>
     
     <lastmod>2019-11-26T12:39:50.000Z</lastmod>
@@ -86,7 +93,7 @@
   </url>
   
   <url>
-    <loc>https://jpaztech.github.io/archive/azure-powershell-3-8-0-install/</loc>
+    <loc>https://jpaztech.github.io/archive/disk11-after20180104/</loc>
     
     <lastmod>2019-11-26T12:39:50.000Z</lastmod>
     
@@ -94,13 +101,6 @@
   
   <url>
     <loc>https://jpaztech.github.io/archive/backup-morethan-1tb-disk/</loc>
-    
-    <lastmod>2019-11-26T12:39:50.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://jpaztech.github.io/archive/disk11-after20180104/</loc>
     
     <lastmod>2019-11-26T12:39:50.000Z</lastmod>
     
@@ -121,7 +121,7 @@
   </url>
   
   <url>
-    <loc>https://jpaztech.github.io/archive/need-azurebox32-ico/</loc>
+    <loc>https://jpaztech.github.io/archive/migration_arm_to_arm/</loc>
     
     <lastmod>2019-11-26T12:39:50.000Z</lastmod>
     
@@ -129,6 +129,13 @@
   
   <url>
     <loc>https://jpaztech.github.io/archive/monitor-io-throttoling-on-win-vm-arm/</loc>
+    
+    <lastmod>2019-11-26T12:39:50.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://jpaztech.github.io/archive/need-azurebox32-ico/</loc>
     
     <lastmod>2019-11-26T12:39:50.000Z</lastmod>
     
@@ -157,13 +164,6 @@
   
   <url>
     <loc>https://jpaztech.github.io/archive/upgrade-backup-container-asm2arm/</loc>
-    
-    <lastmod>2019-11-26T12:39:50.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://jpaztech.github.io/archive/migration_arm_to_arm/</loc>
     
     <lastmod>2019-11-26T12:39:50.000Z</lastmod>
     
