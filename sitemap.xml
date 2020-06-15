@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://jpaztech.github.io/network/considerations-of-microsoft-peering/</loc>
+    
+    <lastmod>2020-06-15T03:03:24.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://jpaztech.github.io/vm/win2019-jp-lpk/</loc>
     
     <lastmod>2020-06-10T10:07:31.000Z</lastmod>
@@ -44,14 +51,14 @@
   </url>
   
   <url>
-    <loc>https://jpaztech.github.io/other/technical_support_engineer_explained/</loc>
+    <loc>https://jpaztech.github.io/other/azure_technical_support_explained/</loc>
     
     <lastmod>2019-12-15T14:44:40.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://jpaztech.github.io/other/azure_technical_support_explained/</loc>
+    <loc>https://jpaztech.github.io/other/technical_support_engineer_explained/</loc>
     
     <lastmod>2019-12-15T14:44:40.000Z</lastmod>
     
@@ -72,13 +79,6 @@
   </url>
   
   <url>
-    <loc>https://jpaztech.github.io/archive/azure-powershell-3-8-0-install/</loc>
-    
-    <lastmod>2019-11-26T12:39:50.000Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://jpaztech.github.io/archive/application-gateway-waf-vulnerability-detection/</loc>
     
     <lastmod>2019-11-26T12:39:50.000Z</lastmod>
@@ -93,7 +93,7 @@
   </url>
   
   <url>
-    <loc>https://jpaztech.github.io/archive/disk11-after20180104/</loc>
+    <loc>https://jpaztech.github.io/archive/azure-powershell-3-8-0-install/</loc>
     
     <lastmod>2019-11-26T12:39:50.000Z</lastmod>
     
@@ -101,6 +101,13 @@
   
   <url>
     <loc>https://jpaztech.github.io/archive/backup-morethan-1tb-disk/</loc>
+    
+    <lastmod>2019-11-26T12:39:50.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://jpaztech.github.io/archive/disk11-after20180104/</loc>
     
     <lastmod>2019-11-26T12:39:50.000Z</lastmod>
     
