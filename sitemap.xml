@@ -2,189 +2,189 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://jpaztech.github.io/network/snat-options-for-azure-vm/</loc>
+    <loc>https://jpaztech.github.io/blog/network/snat-options-for-azure-vm/</loc>
     
     <lastmod>2020-06-16T06:08:26.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://jpaztech.github.io/vm/win2019-jp-lpk/</loc>
+    <loc>https://jpaztech.github.io/blog/vm/win2019-jp-lpk/</loc>
     
     <lastmod>2020-06-16T05:30:37.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://jpaztech.github.io/network/considerations-of-microsoft-peering/</loc>
+    <loc>https://jpaztech.github.io/blog/network/considerations-of-microsoft-peering/</loc>
     
     <lastmod>2020-06-15T03:03:24.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://jpaztech.github.io/network/appgw-troubleshooting-cert/</loc>
+    <loc>https://jpaztech.github.io/blog/network/appgw-troubleshooting-cert/</loc>
     
     <lastmod>2020-06-10T05:12:21.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://jpaztech.github.io/network/appgw_change_subnet/</loc>
+    <loc>https://jpaztech.github.io/blog/network/appgw_change_subnet/</loc>
     
     <lastmod>2020-04-21T09:03:59.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://jpaztech.github.io/vm/resource-delete/</loc>
+    <loc>https://jpaztech.github.io/blog/vm/resource-delete/</loc>
     
     <lastmod>2020-04-02T05:52:21.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://jpaztech.github.io/vm/resource-health-alert/</loc>
+    <loc>https://jpaztech.github.io/blog/vm/resource-health-alert/</loc>
     
     <lastmod>2020-04-02T05:38:07.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://jpaztech.github.io/network/judge-via-ms-peering/</loc>
+    <loc>https://jpaztech.github.io/blog/network/judge-via-ms-peering/</loc>
     
     <lastmod>2019-12-15T14:44:40.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://jpaztech.github.io/other/azure_technical_support_explained/</loc>
+    <loc>https://jpaztech.github.io/blog/other/azure_technical_support_explained/</loc>
     
     <lastmod>2019-12-15T14:44:40.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://jpaztech.github.io/other/technical_support_engineer_explained/</loc>
+    <loc>https://jpaztech.github.io/blog/other/technical_support_engineer_explained/</loc>
     
     <lastmod>2019-12-15T14:44:40.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://jpaztech.github.io/archive/about-application-gateway/</loc>
+    <loc>https://jpaztech.github.io/blog/archive/about-application-gateway/</loc>
     
     <lastmod>2019-11-26T12:39:50.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://jpaztech.github.io/archive/application-gateway-502-error-info/</loc>
+    <loc>https://jpaztech.github.io/blog/archive/application-gateway-502-error-info/</loc>
     
     <lastmod>2019-11-26T12:39:50.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://jpaztech.github.io/archive/application-gateway-waf-vulnerability-detection/</loc>
+    <loc>https://jpaztech.github.io/blog/archive/application-gateway-waf-vulnerability-detection/</loc>
     
     <lastmod>2019-11-26T12:39:50.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://jpaztech.github.io/archive/applicationgaetway-waf-01/</loc>
+    <loc>https://jpaztech.github.io/blog/archive/applicationgaetway-waf-01/</loc>
     
     <lastmod>2019-11-26T12:39:50.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://jpaztech.github.io/archive/azure-powershell-3-8-0-install/</loc>
+    <loc>https://jpaztech.github.io/blog/archive/azure-powershell-3-8-0-install/</loc>
     
     <lastmod>2019-11-26T12:39:50.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://jpaztech.github.io/archive/backup-morethan-1tb-disk/</loc>
+    <loc>https://jpaztech.github.io/blog/archive/backup-morethan-1tb-disk/</loc>
     
     <lastmod>2019-11-26T12:39:50.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://jpaztech.github.io/archive/disk11-after20180104/</loc>
+    <loc>https://jpaztech.github.io/blog/archive/disk11-after20180104/</loc>
     
     <lastmod>2019-11-26T12:39:50.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://jpaztech.github.io/archive/dns-2016-09-16/</loc>
+    <loc>https://jpaztech.github.io/blog/archive/dns-2016-09-16/</loc>
     
     <lastmod>2019-11-26T12:39:50.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://jpaztech.github.io/archive/mayupdate_unable-to-rdp/</loc>
+    <loc>https://jpaztech.github.io/blog/archive/mayupdate_unable-to-rdp/</loc>
     
     <lastmod>2019-11-26T12:39:50.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://jpaztech.github.io/archive/migration_arm_to_arm/</loc>
+    <loc>https://jpaztech.github.io/blog/archive/migration_arm_to_arm/</loc>
     
     <lastmod>2019-11-26T12:39:50.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://jpaztech.github.io/archive/monitor-io-throttoling-on-win-vm-arm/</loc>
+    <loc>https://jpaztech.github.io/blog/archive/monitor-io-throttoling-on-win-vm-arm/</loc>
     
     <lastmod>2019-11-26T12:39:50.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://jpaztech.github.io/archive/need-azurebox32-ico/</loc>
+    <loc>https://jpaztech.github.io/blog/archive/need-azurebox32-ico/</loc>
     
     <lastmod>2019-11-26T12:39:50.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://jpaztech.github.io/archive/powershell-applicationgateway-configuration/</loc>
+    <loc>https://jpaztech.github.io/blog/archive/powershell-applicationgateway-configuration/</loc>
     
     <lastmod>2019-11-26T12:39:50.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://jpaztech.github.io/archive/restore-vm-by-swap-manageddisk/</loc>
+    <loc>https://jpaztech.github.io/blog/archive/restore-vm-by-swap-manageddisk/</loc>
     
     <lastmod>2019-11-26T12:39:50.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://jpaztech.github.io/archive/take-time-to-boot-after20171209/</loc>
+    <loc>https://jpaztech.github.io/blog/archive/take-time-to-boot-after20171209/</loc>
     
     <lastmod>2019-11-26T12:39:50.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://jpaztech.github.io/archive/upgrade-backup-container-asm2arm/</loc>
+    <loc>https://jpaztech.github.io/blog/archive/upgrade-backup-container-asm2arm/</loc>
     
     <lastmod>2019-11-26T12:39:50.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://jpaztech.github.io/information/test/</loc>
+    <loc>https://jpaztech.github.io/blog/information/test/</loc>
     
     <lastmod>2019-11-26T12:39:50.000Z</lastmod>
     

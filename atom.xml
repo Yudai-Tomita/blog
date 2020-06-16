@@ -5,9 +5,9 @@
   <subtitle>日本マイクロソフトの Azure IaaS テクニカル サポート チームより、情報をお届けします！</subtitle>
   <link href="/blog/atom.xml" rel="self"/>
   
-  <link href="https://jpaztech.github.io/"/>
+  <link href="https://jpaztech.github.io/blog/"/>
   <updated>2020-06-16T06:08:26.000Z</updated>
-  <id>https://jpaztech.github.io/</id>
+  <id>https://jpaztech.github.io/blog/</id>
   
   <author>
     <name>Japan Azure IaaS Core Support Team</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>Azure VM の外部接続 (SNAT) オプション まとめ</title>
-    <link href="https://jpaztech.github.io/network/snat-options-for-azure-vm/"/>
-    <id>https://jpaztech.github.io/network/snat-options-for-azure-vm/</id>
+    <link href="https://jpaztech.github.io/blog/network/snat-options-for-azure-vm/"/>
+    <id>https://jpaztech.github.io/blog/network/snat-options-for-azure-vm/</id>
     <published>2020-06-16T04:30:00.000Z</published>
     <updated>2020-06-16T06:08:26.000Z</updated>
     
@@ -33,22 +33,22 @@
     </summary>
     
     
-      <category term="Network" scheme="https://jpaztech.github.io/tags/Network/"/>
+      <category term="Network" scheme="https://jpaztech.github.io/blog/tags/Network/"/>
     
-      <category term="NAT Gateway" scheme="https://jpaztech.github.io/tags/NAT-Gateway/"/>
+      <category term="NAT Gateway" scheme="https://jpaztech.github.io/blog/tags/NAT-Gateway/"/>
     
-      <category term="Azure Load Balancer" scheme="https://jpaztech.github.io/tags/Azure-Load-Balancer/"/>
+      <category term="Azure Load Balancer" scheme="https://jpaztech.github.io/blog/tags/Azure-Load-Balancer/"/>
     
-      <category term="Public IP Address" scheme="https://jpaztech.github.io/tags/Public-IP-Address/"/>
+      <category term="Public IP Address" scheme="https://jpaztech.github.io/blog/tags/Public-IP-Address/"/>
     
-      <category term="SNAT" scheme="https://jpaztech.github.io/tags/SNAT/"/>
+      <category term="SNAT" scheme="https://jpaztech.github.io/blog/tags/SNAT/"/>
     
   </entry>
   
   <entry>
     <title>Microsoft Peering 導入時の注意事項</title>
-    <link href="https://jpaztech.github.io/network/considerations-of-microsoft-peering/"/>
-    <id>https://jpaztech.github.io/network/considerations-of-microsoft-peering/</id>
+    <link href="https://jpaztech.github.io/blog/network/considerations-of-microsoft-peering/"/>
+    <id>https://jpaztech.github.io/blog/network/considerations-of-microsoft-peering/</id>
     <published>2020-06-15T01:30:00.000Z</published>
     <updated>2020-06-15T03:03:24.000Z</updated>
     
@@ -62,18 +62,18 @@
     </summary>
     
     
-      <category term="Network" scheme="https://jpaztech.github.io/tags/Network/"/>
+      <category term="Network" scheme="https://jpaztech.github.io/blog/tags/Network/"/>
     
-      <category term="ExpressRoute" scheme="https://jpaztech.github.io/tags/ExpressRoute/"/>
+      <category term="ExpressRoute" scheme="https://jpaztech.github.io/blog/tags/ExpressRoute/"/>
     
-      <category term="Microsoft Peering" scheme="https://jpaztech.github.io/tags/Microsoft-Peering/"/>
+      <category term="Microsoft Peering" scheme="https://jpaztech.github.io/blog/tags/Microsoft-Peering/"/>
     
   </entry>
   
   <entry>
     <title>Azure 環境における Windows Server 2019 の日本語の言語パック適用手順について</title>
-    <link href="https://jpaztech.github.io/vm/win2019-jp-lpk/"/>
-    <id>https://jpaztech.github.io/vm/win2019-jp-lpk/</id>
+    <link href="https://jpaztech.github.io/blog/vm/win2019-jp-lpk/"/>
+    <id>https://jpaztech.github.io/blog/vm/win2019-jp-lpk/</id>
     <published>2020-06-10T08:30:00.000Z</published>
     <updated>2020-06-16T05:30:37.000Z</updated>
     
@@ -90,16 +90,16 @@
     </summary>
     
     
-      <category term="VM" scheme="https://jpaztech.github.io/tags/VM/"/>
+      <category term="VM" scheme="https://jpaztech.github.io/blog/tags/VM/"/>
     
-      <category term="Windows" scheme="https://jpaztech.github.io/tags/Windows/"/>
+      <category term="Windows" scheme="https://jpaztech.github.io/blog/tags/Windows/"/>
     
   </entry>
   
   <entry>
     <title>Application Gateway の証明書関連のトラブルシューティング</title>
-    <link href="https://jpaztech.github.io/network/appgw-troubleshooting-cert/"/>
-    <id>https://jpaztech.github.io/network/appgw-troubleshooting-cert/</id>
+    <link href="https://jpaztech.github.io/blog/network/appgw-troubleshooting-cert/"/>
+    <id>https://jpaztech.github.io/blog/network/appgw-troubleshooting-cert/</id>
     <published>2020-05-11T03:30:00.000Z</published>
     <updated>2020-06-10T05:12:21.000Z</updated>
     
@@ -118,20 +118,20 @@
     </summary>
     
     
-      <category term="Network" scheme="https://jpaztech.github.io/tags/Network/"/>
+      <category term="Network" scheme="https://jpaztech.github.io/blog/tags/Network/"/>
     
-      <category term="ApplicationGateway" scheme="https://jpaztech.github.io/tags/ApplicationGateway/"/>
+      <category term="ApplicationGateway" scheme="https://jpaztech.github.io/blog/tags/ApplicationGateway/"/>
     
-      <category term="Certficate" scheme="https://jpaztech.github.io/tags/Certficate/"/>
+      <category term="Certficate" scheme="https://jpaztech.github.io/blog/tags/Certficate/"/>
     
-      <category term="SSL" scheme="https://jpaztech.github.io/tags/SSL/"/>
+      <category term="SSL" scheme="https://jpaztech.github.io/blog/tags/SSL/"/>
     
   </entry>
   
   <entry>
     <title>Application Gateway でサブネットを変更する方法</title>
-    <link href="https://jpaztech.github.io/network/appgw_change_subnet/"/>
-    <id>https://jpaztech.github.io/network/appgw_change_subnet/</id>
+    <link href="https://jpaztech.github.io/blog/network/appgw_change_subnet/"/>
+    <id>https://jpaztech.github.io/blog/network/appgw_change_subnet/</id>
     <published>2020-04-21T05:30:00.000Z</published>
     <updated>2020-04-21T09:03:59.000Z</updated>
     
@@ -148,16 +148,16 @@
     </summary>
     
     
-      <category term="Network" scheme="https://jpaztech.github.io/tags/Network/"/>
+      <category term="Network" scheme="https://jpaztech.github.io/blog/tags/Network/"/>
     
-      <category term="ApplicationGateway" scheme="https://jpaztech.github.io/tags/ApplicationGateway/"/>
+      <category term="ApplicationGateway" scheme="https://jpaztech.github.io/blog/tags/ApplicationGateway/"/>
     
   </entry>
   
   <entry>
     <title>Azure リソースの意図しない削除について</title>
-    <link href="https://jpaztech.github.io/vm/resource-delete/"/>
-    <id>https://jpaztech.github.io/vm/resource-delete/</id>
+    <link href="https://jpaztech.github.io/blog/vm/resource-delete/"/>
+    <id>https://jpaztech.github.io/blog/vm/resource-delete/</id>
     <published>2020-03-12T08:30:00.000Z</published>
     <updated>2020-04-02T05:52:21.000Z</updated>
     
@@ -175,16 +175,16 @@
     </summary>
     
     
-      <category term="VM" scheme="https://jpaztech.github.io/tags/VM/"/>
+      <category term="VM" scheme="https://jpaztech.github.io/blog/tags/VM/"/>
     
-      <category term="Troubleshooting" scheme="https://jpaztech.github.io/tags/Troubleshooting/"/>
+      <category term="Troubleshooting" scheme="https://jpaztech.github.io/blog/tags/Troubleshooting/"/>
     
   </entry>
   
   <entry>
     <title>リソース正常性（Resource Health）アラートの構成方法</title>
-    <link href="https://jpaztech.github.io/vm/resource-health-alert/"/>
-    <id>https://jpaztech.github.io/vm/resource-health-alert/</id>
+    <link href="https://jpaztech.github.io/blog/vm/resource-health-alert/"/>
+    <id>https://jpaztech.github.io/blog/vm/resource-health-alert/</id>
     <published>2020-01-24T08:30:00.000Z</published>
     <updated>2020-04-02T05:38:07.000Z</updated>
     
@@ -201,16 +201,16 @@
     </summary>
     
     
-      <category term="VM" scheme="https://jpaztech.github.io/tags/VM/"/>
+      <category term="VM" scheme="https://jpaztech.github.io/blog/tags/VM/"/>
     
-      <category term="Resource Health" scheme="https://jpaztech.github.io/tags/Resource-Health/"/>
+      <category term="Resource Health" scheme="https://jpaztech.github.io/blog/tags/Resource-Health/"/>
     
   </entry>
   
   <entry>
     <title>なぜ今サポートエンジニアが熱いか</title>
-    <link href="https://jpaztech.github.io/other/technical_support_engineer_explained/"/>
-    <id>https://jpaztech.github.io/other/technical_support_engineer_explained/</id>
+    <link href="https://jpaztech.github.io/blog/other/technical_support_engineer_explained/"/>
+    <id>https://jpaztech.github.io/blog/other/technical_support_engineer_explained/</id>
     <published>2019-12-05T04:00:00.000Z</published>
     <updated>2019-12-15T14:44:40.000Z</updated>
     
@@ -227,16 +227,16 @@
     </summary>
     
     
-      <category term="Other" scheme="https://jpaztech.github.io/tags/Other/"/>
+      <category term="Other" scheme="https://jpaztech.github.io/blog/tags/Other/"/>
     
-      <category term="Support Explained" scheme="https://jpaztech.github.io/tags/Support-Explained/"/>
+      <category term="Support Explained" scheme="https://jpaztech.github.io/blog/tags/Support-Explained/"/>
     
   </entry>
   
   <entry>
     <title>Microsoft ピアリングを経由するかどうかの確認方法</title>
-    <link href="https://jpaztech.github.io/network/judge-via-ms-peering/"/>
-    <id>https://jpaztech.github.io/network/judge-via-ms-peering/</id>
+    <link href="https://jpaztech.github.io/blog/network/judge-via-ms-peering/"/>
+    <id>https://jpaztech.github.io/blog/network/judge-via-ms-peering/</id>
     <published>2019-11-26T08:30:00.000Z</published>
     <updated>2019-12-15T14:44:40.000Z</updated>
     
@@ -253,16 +253,16 @@
     </summary>
     
     
-      <category term="Network" scheme="https://jpaztech.github.io/tags/Network/"/>
+      <category term="Network" scheme="https://jpaztech.github.io/blog/tags/Network/"/>
     
-      <category term="ExpressRoute" scheme="https://jpaztech.github.io/tags/ExpressRoute/"/>
+      <category term="ExpressRoute" scheme="https://jpaztech.github.io/blog/tags/ExpressRoute/"/>
     
   </entry>
   
   <entry>
     <title>Azure IaaS における有償 Azure テクニカル サポートの対応範囲</title>
-    <link href="https://jpaztech.github.io/other/azure_technical_support_explained/"/>
-    <id>https://jpaztech.github.io/other/azure_technical_support_explained/</id>
+    <link href="https://jpaztech.github.io/blog/other/azure_technical_support_explained/"/>
+    <id>https://jpaztech.github.io/blog/other/azure_technical_support_explained/</id>
     <published>2019-11-20T08:30:00.000Z</published>
     <updated>2019-12-15T14:44:40.000Z</updated>
     
@@ -279,16 +279,16 @@
     </summary>
     
     
-      <category term="Other" scheme="https://jpaztech.github.io/tags/Other/"/>
+      <category term="Other" scheme="https://jpaztech.github.io/blog/tags/Other/"/>
     
-      <category term="Support Explained" scheme="https://jpaztech.github.io/tags/Support-Explained/"/>
+      <category term="Support Explained" scheme="https://jpaztech.github.io/blog/tags/Support-Explained/"/>
     
   </entry>
   
   <entry>
     <title>Japan Azure IaaS Support Blog リニューアルのお知らせ</title>
-    <link href="https://jpaztech.github.io/information/test/"/>
-    <id>https://jpaztech.github.io/information/test/</id>
+    <link href="https://jpaztech.github.io/blog/information/test/"/>
+    <id>https://jpaztech.github.io/blog/information/test/</id>
     <published>2019-09-13T09:29:20.000Z</published>
     <updated>2019-11-26T12:39:50.000Z</updated>
     
@@ -306,14 +306,14 @@
     </summary>
     
     
-      <category term="Information" scheme="https://jpaztech.github.io/tags/Information/"/>
+      <category term="Information" scheme="https://jpaztech.github.io/blog/tags/Information/"/>
     
   </entry>
   
   <entry>
     <title>Application Gateway (WAF) での脆弱性検知について</title>
-    <link href="https://jpaztech.github.io/archive/application-gateway-waf-vulnerability-detection/"/>
-    <id>https://jpaztech.github.io/archive/application-gateway-waf-vulnerability-detection/</id>
+    <link href="https://jpaztech.github.io/blog/archive/application-gateway-waf-vulnerability-detection/"/>
+    <id>https://jpaztech.github.io/blog/archive/application-gateway-waf-vulnerability-detection/</id>
     <published>2018-10-18T00:27:51.000Z</published>
     <updated>2019-11-26T12:39:50.000Z</updated>
     
@@ -330,18 +330,18 @@
     </summary>
     
     
-      <category term="Archive" scheme="https://jpaztech.github.io/tags/Archive/"/>
+      <category term="Archive" scheme="https://jpaztech.github.io/blog/tags/Archive/"/>
     
-      <category term="Application Gateway" scheme="https://jpaztech.github.io/tags/Application-Gateway/"/>
+      <category term="Application Gateway" scheme="https://jpaztech.github.io/blog/tags/Application-Gateway/"/>
     
-      <category term="WAF" scheme="https://jpaztech.github.io/tags/WAF/"/>
+      <category term="WAF" scheme="https://jpaztech.github.io/blog/tags/WAF/"/>
     
   </entry>
   
   <entry>
     <title>(PowerShell編) Azure仮想マシン (管理ディスク) の交換を活用して元のネットワークにリストアする</title>
-    <link href="https://jpaztech.github.io/archive/restore-vm-by-swap-manageddisk/"/>
-    <id>https://jpaztech.github.io/archive/restore-vm-by-swap-manageddisk/</id>
+    <link href="https://jpaztech.github.io/blog/archive/restore-vm-by-swap-manageddisk/"/>
+    <id>https://jpaztech.github.io/blog/archive/restore-vm-by-swap-manageddisk/</id>
     <published>2018-06-04T06:31:32.000Z</published>
     <updated>2019-11-26T12:39:50.000Z</updated>
     
@@ -358,20 +358,20 @@
     </summary>
     
     
-      <category term="Archive" scheme="https://jpaztech.github.io/tags/Archive/"/>
+      <category term="Archive" scheme="https://jpaztech.github.io/blog/tags/Archive/"/>
     
-      <category term="PowerShell" scheme="https://jpaztech.github.io/tags/PowerShell/"/>
+      <category term="PowerShell" scheme="https://jpaztech.github.io/blog/tags/PowerShell/"/>
     
-      <category term="Managed Disk" scheme="https://jpaztech.github.io/tags/Managed-Disk/"/>
+      <category term="Managed Disk" scheme="https://jpaztech.github.io/blog/tags/Managed-Disk/"/>
     
-      <category term="Backup / Restore" scheme="https://jpaztech.github.io/tags/Backup-Restore/"/>
+      <category term="Backup / Restore" scheme="https://jpaztech.github.io/blog/tags/Backup-Restore/"/>
     
   </entry>
   
   <entry>
     <title>5 月のセキュリティ更新を適用後、Windows 仮想マシンに RDP 接続時にエラーが発生する事象の回避策</title>
-    <link href="https://jpaztech.github.io/archive/mayupdate_unable-to-rdp/"/>
-    <id>https://jpaztech.github.io/archive/mayupdate_unable-to-rdp/</id>
+    <link href="https://jpaztech.github.io/blog/archive/mayupdate_unable-to-rdp/"/>
+    <id>https://jpaztech.github.io/blog/archive/mayupdate_unable-to-rdp/</id>
     <published>2018-05-17T06:19:37.000Z</published>
     <updated>2019-11-26T12:39:50.000Z</updated>
     
@@ -388,18 +388,18 @@
     </summary>
     
     
-      <category term="Archive" scheme="https://jpaztech.github.io/tags/Archive/"/>
+      <category term="Archive" scheme="https://jpaztech.github.io/blog/tags/Archive/"/>
     
-      <category term="RDP" scheme="https://jpaztech.github.io/tags/RDP/"/>
+      <category term="RDP" scheme="https://jpaztech.github.io/blog/tags/RDP/"/>
     
-      <category term="Update / Upgrade" scheme="https://jpaztech.github.io/tags/Update-Upgrade/"/>
+      <category term="Update / Upgrade" scheme="https://jpaztech.github.io/blog/tags/Update-Upgrade/"/>
     
   </entry>
   
   <entry>
     <title>Application Gateway における 502 Error について</title>
-    <link href="https://jpaztech.github.io/archive/application-gateway-502-error-info/"/>
-    <id>https://jpaztech.github.io/archive/application-gateway-502-error-info/</id>
+    <link href="https://jpaztech.github.io/blog/archive/application-gateway-502-error-info/"/>
+    <id>https://jpaztech.github.io/blog/archive/application-gateway-502-error-info/</id>
     <published>2018-03-16T11:39:33.000Z</published>
     <updated>2019-11-26T12:39:50.000Z</updated>
     
@@ -415,18 +415,18 @@
     </summary>
     
     
-      <category term="Archive" scheme="https://jpaztech.github.io/tags/Archive/"/>
+      <category term="Archive" scheme="https://jpaztech.github.io/blog/tags/Archive/"/>
     
-      <category term="Application Gateway" scheme="https://jpaztech.github.io/tags/Application-Gateway/"/>
+      <category term="Application Gateway" scheme="https://jpaztech.github.io/blog/tags/Application-Gateway/"/>
     
-      <category term="WAF" scheme="https://jpaztech.github.io/tags/WAF/"/>
+      <category term="WAF" scheme="https://jpaztech.github.io/blog/tags/WAF/"/>
     
   </entry>
   
   <entry>
     <title>2018 年 1 月 4 日以降で Disk 11 のエラーが発生し MARS Agent バックアップが失敗する (0x8007045D)</title>
-    <link href="https://jpaztech.github.io/archive/disk11-after20180104/"/>
-    <id>https://jpaztech.github.io/archive/disk11-after20180104/</id>
+    <link href="https://jpaztech.github.io/blog/archive/disk11-after20180104/"/>
+    <id>https://jpaztech.github.io/blog/archive/disk11-after20180104/</id>
     <published>2018-01-23T14:15:17.000Z</published>
     <updated>2019-11-26T12:39:50.000Z</updated>
     
@@ -444,18 +444,18 @@
     </summary>
     
     
-      <category term="Archive" scheme="https://jpaztech.github.io/tags/Archive/"/>
+      <category term="Archive" scheme="https://jpaztech.github.io/blog/tags/Archive/"/>
     
-      <category term="Azure Backup" scheme="https://jpaztech.github.io/tags/Azure-Backup/"/>
+      <category term="Azure Backup" scheme="https://jpaztech.github.io/blog/tags/Azure-Backup/"/>
     
-      <category term="MARS Agent" scheme="https://jpaztech.github.io/tags/MARS-Agent/"/>
+      <category term="MARS Agent" scheme="https://jpaztech.github.io/blog/tags/MARS-Agent/"/>
     
   </entry>
   
   <entry>
     <title>2017/12/9 以降 Azure VM の起動に時間がかかる事象についての対処方法</title>
-    <link href="https://jpaztech.github.io/archive/take-time-to-boot-after20171209/"/>
-    <id>https://jpaztech.github.io/archive/take-time-to-boot-after20171209/</id>
+    <link href="https://jpaztech.github.io/blog/archive/take-time-to-boot-after20171209/"/>
+    <id>https://jpaztech.github.io/blog/archive/take-time-to-boot-after20171209/</id>
     <published>2017-12-18T01:17:24.000Z</published>
     <updated>2019-11-26T12:39:50.000Z</updated>
     
@@ -471,16 +471,16 @@
     </summary>
     
     
-      <category term="Archive" scheme="https://jpaztech.github.io/tags/Archive/"/>
+      <category term="Archive" scheme="https://jpaztech.github.io/blog/tags/Archive/"/>
     
-      <category term="Boot" scheme="https://jpaztech.github.io/tags/Boot/"/>
+      <category term="Boot" scheme="https://jpaztech.github.io/blog/tags/Boot/"/>
     
   </entry>
   
   <entry>
     <title>ARMのWindowsでディスクやVMレベルでのIOスロットリングを監視・通知する方法</title>
-    <link href="https://jpaztech.github.io/archive/monitor-io-throttoling-on-win-vm-arm/"/>
-    <id>https://jpaztech.github.io/archive/monitor-io-throttoling-on-win-vm-arm/</id>
+    <link href="https://jpaztech.github.io/blog/archive/monitor-io-throttoling-on-win-vm-arm/"/>
+    <id>https://jpaztech.github.io/blog/archive/monitor-io-throttoling-on-win-vm-arm/</id>
     <published>2017-10-04T01:23:55.000Z</published>
     <updated>2019-11-26T12:39:50.000Z</updated>
     
@@ -497,20 +497,20 @@
     </summary>
     
     
-      <category term="Archive" scheme="https://jpaztech.github.io/tags/Archive/"/>
+      <category term="Archive" scheme="https://jpaztech.github.io/blog/tags/Archive/"/>
     
-      <category term="Monitoring / Alert" scheme="https://jpaztech.github.io/tags/Monitoring-Alert/"/>
+      <category term="Monitoring / Alert" scheme="https://jpaztech.github.io/blog/tags/Monitoring-Alert/"/>
     
-      <category term="IO Throttling" scheme="https://jpaztech.github.io/tags/IO-Throttling/"/>
+      <category term="IO Throttling" scheme="https://jpaztech.github.io/blog/tags/IO-Throttling/"/>
     
-      <category term="Performance" scheme="https://jpaztech.github.io/tags/Performance/"/>
+      <category term="Performance" scheme="https://jpaztech.github.io/blog/tags/Performance/"/>
     
   </entry>
   
   <entry>
     <title>Application Gateway を PowerShell で設定変更するコツ</title>
-    <link href="https://jpaztech.github.io/archive/powershell-applicationgateway-configuration/"/>
-    <id>https://jpaztech.github.io/archive/powershell-applicationgateway-configuration/</id>
+    <link href="https://jpaztech.github.io/blog/archive/powershell-applicationgateway-configuration/"/>
+    <id>https://jpaztech.github.io/blog/archive/powershell-applicationgateway-configuration/</id>
     <published>2017-09-07T06:28:25.000Z</published>
     <updated>2019-11-26T12:39:50.000Z</updated>
     
@@ -527,18 +527,18 @@
     </summary>
     
     
-      <category term="Archive" scheme="https://jpaztech.github.io/tags/Archive/"/>
+      <category term="Archive" scheme="https://jpaztech.github.io/blog/tags/Archive/"/>
     
-      <category term="Application Gateway" scheme="https://jpaztech.github.io/tags/Application-Gateway/"/>
+      <category term="Application Gateway" scheme="https://jpaztech.github.io/blog/tags/Application-Gateway/"/>
     
-      <category term="PowerShell" scheme="https://jpaztech.github.io/tags/PowerShell/"/>
+      <category term="PowerShell" scheme="https://jpaztech.github.io/blog/tags/PowerShell/"/>
     
   </entry>
   
   <entry>
     <title>Application Gateway で利用できる WAF について</title>
-    <link href="https://jpaztech.github.io/archive/applicationgaetway-waf-01/"/>
-    <id>https://jpaztech.github.io/archive/applicationgaetway-waf-01/</id>
+    <link href="https://jpaztech.github.io/blog/archive/applicationgaetway-waf-01/"/>
+    <id>https://jpaztech.github.io/blog/archive/applicationgaetway-waf-01/</id>
     <published>2017-09-07T00:23:52.000Z</published>
     <updated>2019-11-26T12:39:50.000Z</updated>
     
@@ -554,11 +554,11 @@
     </summary>
     
     
-      <category term="Archive" scheme="https://jpaztech.github.io/tags/Archive/"/>
+      <category term="Archive" scheme="https://jpaztech.github.io/blog/tags/Archive/"/>
     
-      <category term="Application Gateway" scheme="https://jpaztech.github.io/tags/Application-Gateway/"/>
+      <category term="Application Gateway" scheme="https://jpaztech.github.io/blog/tags/Application-Gateway/"/>
     
-      <category term="WAF" scheme="https://jpaztech.github.io/tags/WAF/"/>
+      <category term="WAF" scheme="https://jpaztech.github.io/blog/tags/WAF/"/>
     
   </entry>
   
