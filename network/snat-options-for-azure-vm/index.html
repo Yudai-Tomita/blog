@@ -10,14 +10,20 @@
 <meta name="keywords" content="Network,NAT Gateway,Azure Load Balancer,Public IP Address,SNAT">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Azure VM の外部接続 (SNAT) オプション まとめ">
-<meta property="og:url" content="https://jpaztech.github.io/network/snat-options-for-auzre-vm/index.html">
+<meta property="og:url" content="https://jpaztech.github.io/network/snat-options-for-azure-vm/index.html">
 <meta property="og:site_name" content="Japan Azure IaaS Core Support Blog">
 <meta property="og:description" content="Azure Networking テクニカル サポートの山口です。 Azure VM がインターネットに接続する際には、パブリック IP アドレスでの送信元 NAT (SNAT) が必要です。Azure は、外部接続の SNAT に関して多くのオプションを提供していますが、オプションが多くて便利な反面、全オプションの列挙やオプション間の比較が難しいのも事実です。そうした難しさを少しでも緩和できるよ">
 <meta property="og:locale" content="ja">
-<meta property="og:updated_time" content="2020-06-16T05:29:56.000Z">
+<meta property="og:image" content="https://jpaztech.github.io/blog/network/snat-options-for-azure-vm/flowchart-to-determine-snat-scenario.png">
+<meta property="og:image" content="https://jpaztech.github.io/blog/network/snat-options-for-azure-vm/nat-gateway-snat.png">
+<meta property="og:image" content="https://jpaztech.github.io/blog/network/snat-options-for-azure-vm/public-ip-address-snat.png">
+<meta property="og:image" content="https://jpaztech.github.io/blog/network/snat-options-for-azure-vm/auzre-load-balancer-snat.png">
+<meta property="og:image" content="https://jpaztech.github.io/blog/network/snat-options-for-azure-vm/azure-default-snat.png">
+<meta property="og:updated_time" content="2020-06-16T06:08:26.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Azure VM の外部接続 (SNAT) オプション まとめ">
 <meta name="twitter:description" content="Azure Networking テクニカル サポートの山口です。 Azure VM がインターネットに接続する際には、パブリック IP アドレスでの送信元 NAT (SNAT) が必要です。Azure は、外部接続の SNAT に関して多くのオプションを提供していますが、オプションが多くて便利な反面、全オプションの列挙やオプション間の比較が難しいのも事実です。そうした難しさを少しでも緩和できるよ">
+<meta name="twitter:image" content="https://jpaztech.github.io/blog/network/snat-options-for-azure-vm/flowchart-to-determine-snat-scenario.png">
   
     <link rel="alternate" href="../../blog/atom.xml" title="Japan Azure IaaS Core Support Blog" type="application/atom+xml">
   
@@ -77,7 +83,7 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main"><article id="post-network/snat-options-for-auzre-vm" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-network/snat-options-for-azure-vm" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-inner">
     
     
@@ -98,9 +104,9 @@
 </a>
         
         
-        <a href="https://github.com/jpaztech/blog/issues/new?title=&body=%0A%0A---%0A%0A%23%23%23%23+Document+Details%0A%0A%E2%9A%A0+*Do+not+edit+this+section.%0A%0A*+ID%3A+0c5e4c4d-fdae-5c24-8f2b-ff3fb1f2c529%0A*+%E5%AF%BE%E8%B1%A1%E8%A8%98%E4%BA%8B%3A+%5BAzure+VM+%E3%81%AE%E5%A4%96%E9%83%A8%E6%8E%A5%E7%B6%9A+%28SNAT%29+%E3%82%AA%E3%83%97%E3%82%B7%E3%83%A7%E3%83%B3+%E3%81%BE%E3%81%A8%E3%82%81%5D%28https%3A%2F%2Fjpaztech.github.io%2Fblog%2Fnetwork%2Fsnat-options-for-auzre-vm%2F%29%0A*+Content+Source%3A+%5Barticles%2Fnetwork%2Fsnat-options-for-auzre-vm.md%5D%28https%3A%2F%2Fgithub.com%2Fjpaztech%2Fblog%2Fblob%2Fmaster%2Farticles%2Fnetwork%2Fsnat-options-for-auzre-vm.md%29%0A*+Author%3A+" class="article-github-issue-link" target="_blank" rel="noopener noreferrer">feedback</a>
+        <a href="https://github.com/jpaztech/blog/issues/new?title=&body=%0A%0A---%0A%0A%23%23%23%23+Document+Details%0A%0A%E2%9A%A0+*Do+not+edit+this+section.%0A%0A*+ID%3A+2b02002d-b3f8-5038-9e94-ead0a2a5c291%0A*+%E5%AF%BE%E8%B1%A1%E8%A8%98%E4%BA%8B%3A+%5BAzure+VM+%E3%81%AE%E5%A4%96%E9%83%A8%E6%8E%A5%E7%B6%9A+%28SNAT%29+%E3%82%AA%E3%83%97%E3%82%B7%E3%83%A7%E3%83%B3+%E3%81%BE%E3%81%A8%E3%82%81%5D%28https%3A%2F%2Fjpaztech.github.io%2Fblog%2Fnetwork%2Fsnat-options-for-azure-vm%2F%29%0A*+Content+Source%3A+%5Barticles%2Fnetwork%2Fsnat-options-for-azure-vm.md%5D%28https%3A%2F%2Fgithub.com%2Fjpaztech%2Fblog%2Fblob%2Fmaster%2Farticles%2Fnetwork%2Fsnat-options-for-azure-vm.md%29%0A*+Author%3A+" class="article-github-issue-link" target="_blank" rel="noopener noreferrer">feedback</a>
         
-        <a data-url="https://jpaztech.github.io/network/snat-options-for-auzre-vm/" data-id="ckbhhwlxf000z57sfddwnzx6m" class="article-share-link">共有</a>
+        <a data-url="https://jpaztech.github.io/network/snat-options-for-azure-vm/" data-id="ckbhj1a380012ossf8r8pf59g" class="article-share-link">共有</a>
       </div>
     
     <div class="article-entry" itemprop="articleBody">
@@ -129,7 +135,7 @@
 <h2 id="判定フローチャート"><a href="#判定フローチャート" class="headerlink" title="判定フローチャート"></a>判定フローチャート</h2><p>個々の詳細を見る前に、SNAT オプション同士の依存関係を把握し、全体感を捉えておきましょう。</p>
 <p>というのも、環境によっては複数の SNAT オプションが構成されている可能性がある為です。例えば、NAT Gateway を関連付けたサブネットの中に、パブリック IP アドレスを付与した VM をデプロイするとどうなるでしょうか?</p>
 <p>そのような状況で役に立つフローチャートを作図しました。以下のフローに従えば、<strong>ある Azure VM のある NIC</strong> がどのように SNAT されるか判定できます。VM ではなく、<span style="color: #c00000">NIC に関する SNAT 方法判定</span>である点に注意してください。</p>
-
+<img src="/blog/network/snat-options-for-azure-vm/flowchart-to-determine-snat-scenario.png">
 
 <p>なお、フローチャートに脚注で記載されているシナリオ {1, 2, 3} は、以下の公式ドキュメントのシナリオ番号に対応しています。</p>
 <ul>
@@ -266,7 +272,7 @@
 <p>[^1]: UDR の関連付け単位がサブネットであることに起因しています<br>[^2]: NVA による SNAT も結局は NAT Gateway、パブリック IP アドレス、外部 Azure Load Balancer、Azure 既定の SNAT のいずれかのオプションを NVA で利用しています。したがって、NVA の動作制限に加えて、これらの制限も当然加わります。</p>
 <h2 id="SNAT-オプションの詳細"><a href="#SNAT-オプションの詳細" class="headerlink" title="SNAT オプションの詳細"></a>SNAT オプションの詳細</h2><p>このセクションでは、各 SNAT オプションについて少し深堀りして説明します。</p>
 <p>主な特徴やユースケース、注意事項等を記載しますので、ここまでの内容を踏まえて興味の湧いた SNAT オプションについて、詳しく確認してみてください。</p>
-<h3 id="NAT-Gateway"><a href="#NAT-Gateway" class="headerlink" title="NAT Gateway"></a>NAT Gateway</h3>
+<h3 id="NAT-Gateway"><a href="#NAT-Gateway" class="headerlink" title="NAT Gateway"></a>NAT Gateway</h3><img src="/blog/network/snat-options-for-azure-vm/nat-gateway-snat.png">
 
 <p><em>NAT ゲートウェイ (NAT Gateway)</em> は、複数ある SNAT オプションの中で唯一「外部接続だけを目的とした」専用サービスです。専用サービスとだけあって、SNAT プールの固定化はもちろん、動的なポート確保など、他の SNAT オプションにはない機能を有します。</p>
 <p><strong>特徴</strong></p>
@@ -303,7 +309,7 @@
 <li><a href="https://docs.microsoft.com/ja-jp/azure/virtual-network/nat-gateway-resource" target="_blank" rel="noopener">NAT ゲートウェイ リソースを使用した仮想ネットワークの設計 - Azure Virtual Network NAT | Microsoft Docs</a></li>
 <li><a href="https://docs.microsoft.com/ja-jp/azure/virtual-network/troubleshoot-nat" target="_blank" rel="noopener">Azure Virtual Network NAT 接続のトラブルシューティング - Azure Virtual Network | Microsoft Docs</a></li>
 </ul>
-<h3 id="パブリック-IP-アドレス"><a href="#パブリック-IP-アドレス" class="headerlink" title="パブリック IP アドレス"></a>パブリック IP アドレス</h3>
+<h3 id="パブリック-IP-アドレス"><a href="#パブリック-IP-アドレス" class="headerlink" title="パブリック IP アドレス"></a>パブリック IP アドレス</h3><img src="/blog/network/snat-options-for-azure-vm/public-ip-address-snat.png">
 
 <p>Azure VM のネットワーク インターフェイス (NIC) にパブリック IP アドレス (Public IP) を関連付けると、その NIC からの外部接続は Public IP によって SNAT される動作となります。</p>
 <p><strong>特徴</strong></p>
@@ -331,7 +337,7 @@
 <li>[Azure の Outbound connections &gt; シナリオ 1:パブリック IP アドレスありの VM | Microsoft Docs](<a href="https://docs.microsoft.com/ja-jp/azure/load-balancer/load-balancer-outbound-connections#ilPublic" target="_blank" rel="noopener">https://docs.microsoft.com/ja-jp/azure/load-balancer/load-balancer-outbound-connections#ilPublic</a> IP)</li>
 <li><a href="https://docs.microsoft.com/ja-jp/azure/virtual-network/virtual-network-public-ip-address" target="_blank" rel="noopener">Azure パブリック IP アドレスの作成、変更、削除 | Microsoft Docs</a></li>
 </ul>
-<h3 id="Azure-Load-Balancer"><a href="#Azure-Load-Balancer" class="headerlink" title="Azure Load Balancer"></a>Azure Load Balancer</h3>
+<h3 id="Azure-Load-Balancer"><a href="#Azure-Load-Balancer" class="headerlink" title="Azure Load Balancer"></a>Azure Load Balancer</h3><img src="/blog/network/snat-options-for-azure-vm/auzre-load-balancer-snat.png">
 
 <p>外部ロードバランサーのバックエンド プールに Azure VM を配置すると、構成した規則に応じて、フロントエンドの Public IP で SNAT される動作となります。</p>
 <!-- [^Azure Load Balancer-snat-trigger]: 厳密にはバックエンド プールに VM を配置するだけでは不十分で、規則 (送信規則、負荷分散規則、インバウンド NAT 規則) を作るまでは SNAT されません。 -->
@@ -379,7 +385,7 @@
 <li><a href="https://docs.microsoft.com/ja-jp/azure/load-balancer/load-balancer-outbound-connections#scenario-2-load-balanced-vm-without-a-public-ip-address" target="_blank" rel="noopener">Azure の Outbound connections &gt; シナリオ 2:パブリック IP アドレスなしの負荷分散 VM | Microsoft Docs</a></li>
 <li><a href="https://docs.microsoft.com/ja-jp/azure/load-balancer/configure-load-balancer-outbound-portal" target="_blank" rel="noopener">Azure portal を使用して負荷分散規則とアウトバウンド規則を構成する - Azure Load Balancer | Microsoft Docs</a></li>
 </ul>
-<h3 id="Azure-既定の-SNAT"><a href="#Azure-既定の-SNAT" class="headerlink" title="Azure 既定の SNAT"></a>Azure 既定の SNAT</h3>
+<h3 id="Azure-既定の-SNAT"><a href="#Azure-既定の-SNAT" class="headerlink" title="Azure 既定の SNAT"></a>Azure 既定の SNAT</h3><img src="/blog/network/snat-options-for-azure-vm/azure-default-snat.png">
 
 <p>パブリック IP アドレスや外部ロードバランサーにも関連づいていない状態でも、Azure VM は既定で外部接続できるようになっています。特に SNAT の構成をしていないのにも関わらず、外部接続ができることで驚いた経験をした方もいらっしゃるのではないでしょうか。</p>
 <p>特にパブリック IP アドレスをユーザーが確保しているわけではないため、SNAT プールはオンザフライでの提供となります。具体的には、VM がデプロイされている Azure リージョンで使用されるグローバル IP アドレスのうち、未使用なものがランダムに割り当てられます。そのため、VM を再起動するたびに、SNAT に利用される NAT アドレスは変動します。</p>
@@ -428,7 +434,7 @@
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="../../tags/Azure-Load-Balancer/">Azure Load Balancer</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="../../tags/NAT-Gateway/">NAT Gateway</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="../../tags/Network/">Network</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="../../tags/Public-IP-Address/">Public IP Address</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="../../tags/SNAT/">SNAT</a></li></ul>
 
         
-        <a href="https://github.com/jpaztech/blog/edit/master/articles/network/snat-options-for-auzre-vm.md" class="article-github-edit-link" target="_blank" rel="noopener noreferrer">GitHub で編集</a>
+        <a href="https://github.com/jpaztech/blog/edit/master/articles/network/snat-options-for-azure-vm.md" class="article-github-edit-link" target="_blank" rel="noopener noreferrer">GitHub で編集</a>
         
     </footer>
   </div>
