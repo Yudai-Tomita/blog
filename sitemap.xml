@@ -2,16 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://jpaztech.github.io/network/considerations-of-microsoft-peering/</loc>
+    <loc>https://jpaztech.github.io/vm/win2019-jp-lpk/</loc>
     
-    <lastmod>2020-06-15T03:03:24.000Z</lastmod>
+    <lastmod>2020-06-16T05:30:37.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://jpaztech.github.io/vm/win2019-jp-lpk/</loc>
+    <loc>https://jpaztech.github.io/network/snat-options-for-auzre-vm/</loc>
     
-    <lastmod>2020-06-10T10:07:31.000Z</lastmod>
+    <lastmod>2020-06-16T05:29:56.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://jpaztech.github.io/network/considerations-of-microsoft-peering/</loc>
+    
+    <lastmod>2020-06-15T03:03:24.000Z</lastmod>
     
   </url>
   
