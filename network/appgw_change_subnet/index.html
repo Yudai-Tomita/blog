@@ -14,7 +14,7 @@
 <meta property="og:description" content="こんにちは、Azure サポートチームの薄井です。今回は Application Gateway V1 および V2 でサブネットを変更する方法についてご紹介します。 残念ながら現在の Azure ポータルからは、すでにデプロイした Application Gateway のサブネットを後から変更することはできません。サブネットを変更する必要性が生じたら、新しく Application Gatew">
 <meta property="og:locale" content="ja_JP">
 <meta property="article:published_time" content="2020-04-21T05:30:00.000Z">
-<meta property="article:modified_time" content="2020-04-21T09:03:59.000Z">
+<meta property="article:modified_time" content="2020-06-19T19:55:35.000Z">
 <meta property="article:author" content="Japan Azure IaaS Core Support Team">
 <meta property="article:tag" content="Network">
 <meta property="article:tag" content="ApplicationGateway">
@@ -29,12 +29,6 @@
   <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
   <link rel="manifest" href="./site.webmanifest">
   <link rel="mask-icon" href="./safari-pinned-tab.svg" color="#5bbad5">
-  
-  <!-- add bing webmaster -->
-  <meta name="msvalidate.01" content="D848E77AC8EE21247E4A391888E3F1A1" />
-  <!-- add google search console -->
-  <meta name="google-site-verification" content="m9df-LKg2Sf2nTSpuo2Uyqf4mQilvJzLijrynIuGQIg" />
-
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="theme-color" content="#ffffff">
   
@@ -66,6 +60,9 @@
           <a id="nav-rss-link" class="nav-icon" href="../../blog/atom.xml" title="RSSフィード"></a>
         
       </nav>
+      <div id="search-form-wrap">
+        <form action="//www.bing.com/search" method="get" accept-charset="UTF-8" name="bing-search" onsubmit="var f=this;if(f['q'].value){var searchUrl =  'https://www.bing.com/search?q=' +  encodeURIComponent(f['q'].value + ' site:' + f['sitesearch'].value) ;window.open(searchUrl, 'blank') };return false;" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="検索"><button type="submit" id="nav-search-btn" class="search-form-submit"></button><input type="hidden" name="sitesearch" value="https://jpaztech.github.io/blog"></form>
+      </div>
     </div>
     <div id="header-title" class="inner">
       <h1 id="logo-wrap">
@@ -103,7 +100,7 @@
         
         <a href="https://github.com/jpaztech/blog/issues/new?title=&body=%0A%0A---%0A%0A%23%23%23%23+Document+Details%0A%0A%E2%9A%A0+*Do+not+edit+this+section.%0A%0A*+ID%3A+5c5e1d76-dedb-5d6e-9f2e-38b475e57aa2%0A*+%E5%AF%BE%E8%B1%A1%E8%A8%98%E4%BA%8B%3A+%5BApplication+Gateway+%E3%81%A7%E3%82%B5%E3%83%96%E3%83%8D%E3%83%83%E3%83%88%E3%82%92%E5%A4%89%E6%9B%B4%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95%5D%28https%3A%2F%2Fjpaztech.github.io%2Fblog%2Fnetwork%2Fappgw_change_subnet%2F%29%0A*+Content+Source%3A+%5Barticles%2Fnetwork%2Fappgw_change_subnet.md%5D%28https%3A%2F%2Fgithub.com%2Fjpaztech%2Fblog%2Fblob%2Fmaster%2Farticles%2Fnetwork%2Fappgw_change_subnet.md%29%0A*+Author%3A+" class="article-github-issue-link" target="_blank" rel="noopener noreferrer">feedback</a>
         
-        <a data-url="https://jpaztech.github.io/blog/network/appgw_change_subnet/" data-id="ckbm0547q000s3usf4u9r4ocv" class="article-share-link">共有</a>
+        <a data-url="https://jpaztech.github.io/blog/network/appgw_change_subnet/" data-id="ckbmmve3o000smhsfaeeld35d" class="article-share-link">共有</a>
       </div>
     
     <div class="article-entry" itemprop="articleBody">
@@ -120,25 +117,25 @@
 <li><p>Azure PowerShell または ポータルより Cloud Shell を起動し、以下のコマンドレットを入力します。（&lt;&gt;の部分は環境に合わせて変更が必要となります）</p>
 </li>
 <li><p>構成を変更する対象のサブスクリプションを指定します。</p>
-<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">Select-AzSubscription</span> <span class="literal">-SubscriptionId</span> &lt;サブスクリプション ID&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Select-AzSubscription -SubscriptionId &lt;サブスクリプション ID&gt;</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>構成を変更する対象の仮想ネットワークを指定します。</p>
-<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$VNet</span> = <span class="built_in">Get-AzVirtualNetwork</span> <span class="literal">-Name</span> &lt;対象の仮想ネットワーク&gt; <span class="literal">-ResourceGroupName</span> &lt;変更対象のリソースグループ&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$VNet</span> = Get-AzVirtualNetwork -Name &lt;対象の仮想ネットワーク&gt; -ResourceGroupName &lt;変更対象のリソースグループ&gt;</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>変更先のサブネットを取得します。</p>
-<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$Subnet</span> = <span class="built_in">Get-AzVirtualNetworkSubnetConfig</span> <span class="literal">-Name</span> &lt;変更先のサブネット名&gt; <span class="literal">-VirtualNetwork</span> <span class="variable">$VNet</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$Subnet</span> = Get-AzVirtualNetworkSubnetConfig -Name &lt;変更先のサブネット名&gt; -VirtualNetwork <span class="variable">$VNet</span></span><br></pre></td></tr></table></figure>
 </li>
 <li><p>変更対象の Application Gateway を取得します。</p>
-<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$gw</span>=<span class="built_in">Get-AzApplicationGateway</span> <span class="literal">-name</span> &lt;変更対象の Application Gateway 名&gt; <span class="literal">-ResourceGroupName</span> &lt;変更対象のリソースグループ&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$gw</span>=Get-AzApplicationGateway -name &lt;変更対象の Application Gateway 名&gt; -ResourceGroupName &lt;変更対象のリソースグループ&gt;</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>サブネットの変更を加えます。</p>
-<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$gw2</span>=<span class="built_in">Set-AzApplicationGatewayIPConfiguration</span> <span class="literal">-ApplicationGateway</span> <span class="variable">$gw</span> <span class="literal">-Name</span> <span class="string">"appGatewayIpConfig"</span> <span class="literal">-Subnet</span> <span class="variable">$Subnet</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$gw2</span>=Set-AzApplicationGatewayIPConfiguration -ApplicationGateway <span class="variable">$gw</span> -Name <span class="string">"appGatewayIpConfig"</span> -Subnet <span class="variable">$Subnet</span></span><br></pre></td></tr></table></figure>
 </li>
 <li><p>稼働中の Application Gateway を停止します。※ 停止に数分かかります</p>
-<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">Stop-AzApplicationGateway</span> <span class="literal">-ApplicationGateway</span> <span class="variable">$gw</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Stop-AzApplicationGateway -ApplicationGateway <span class="variable">$gw</span></span><br></pre></td></tr></table></figure>
 </li>
 <li><p>Application Gatewayを設定、開始します。※ 開始に 10 分以上かかります</p>
-<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">Set-AzApplicationGateway</span> <span class="literal">-ApplicationGateway</span> <span class="variable">$gw2</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Set-AzApplicationGateway -ApplicationGateway <span class="variable">$gw2</span></span><br></pre></td></tr></table></figure>
 </li>
 <li><p>開始後に以前と同様に Web サーバへアクセスできるか確認します。</p>
 </li>
@@ -152,6 +149,7 @@
 <li><a href="https://docs.microsoft.com/ja-jp/azure/application-gateway/application-gateway-faq" target="_blank" rel="noopener">Application Gateway に関してよく寄せられる質問</a></li>
 </ul>
 
+      
       
     </div>
     <footer class="article-footer">
@@ -276,15 +274,6 @@
     
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-
-
-  
-<link rel="stylesheet" href="../../fancybox/jquery.fancybox.css">
-
-  
-<script src="../../fancybox/jquery.fancybox.pack.js"></script>
-
-
 
 
 <script src="../../js/script.js"></script>

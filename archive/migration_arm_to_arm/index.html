@@ -22,7 +22,7 @@
 <meta property="og:image" content="https://jpaztech.github.io/blog/archive/migration_arm_to_arm/archive/migration_arm_to_arm/VHD_URL2.png">
 <meta property="og:image" content="https://jpaztech.github.io/blog/archive/migration_arm_to_arm/archive/migration_arm_to_arm/accesskeynew.png">
 <meta property="article:published_time" content="2016-11-07T09:42:09.000Z">
-<meta property="article:modified_time" content="2019-11-26T12:39:50.000Z">
+<meta property="article:modified_time" content="2020-06-19T19:55:35.000Z">
 <meta property="article:author" content="Japan Azure IaaS Core Support Team">
 <meta property="article:tag" content="Archive">
 <meta property="article:tag" content="Migration">
@@ -39,12 +39,6 @@
   <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
   <link rel="manifest" href="./site.webmanifest">
   <link rel="mask-icon" href="./safari-pinned-tab.svg" color="#5bbad5">
-  
-  <!-- add bing webmaster -->
-  <meta name="msvalidate.01" content="D848E77AC8EE21247E4A391888E3F1A1" />
-  <!-- add google search console -->
-  <meta name="google-site-verification" content="m9df-LKg2Sf2nTSpuo2Uyqf4mQilvJzLijrynIuGQIg" />
-
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="theme-color" content="#ffffff">
   
@@ -76,6 +70,9 @@
           <a id="nav-rss-link" class="nav-icon" href="../../blog/atom.xml" title="RSSフィード"></a>
         
       </nav>
+      <div id="search-form-wrap">
+        <form action="//www.bing.com/search" method="get" accept-charset="UTF-8" name="bing-search" onsubmit="var f=this;if(f['q'].value){var searchUrl =  'https://www.bing.com/search?q=' +  encodeURIComponent(f['q'].value + ' site:' + f['sitesearch'].value) ;window.open(searchUrl, 'blank') };return false;" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="検索"><button type="submit" id="nav-search-btn" class="search-form-submit"></button><input type="hidden" name="sitesearch" value="https://jpaztech.github.io/blog"></form>
+      </div>
     </div>
     <div id="header-title" class="inner">
       <h1 id="logo-wrap">
@@ -113,7 +110,7 @@
         
         <a href="https://github.com/jpaztech/blog/issues/new?title=&body=%0A%0A---%0A%0A%23%23%23%23+Document+Details%0A%0A%E2%9A%A0+*Do+not+edit+this+section.%0A%0A*+ID%3A+a53f3ccd-db96-53fc-9550-ccfea23808af%0A*+%E5%AF%BE%E8%B1%A1%E8%A8%98%E4%BA%8B%3A+%5BARM+%E7%92%B0%E5%A2%83%E3%81%8B%E3%82%89+ARM+%E7%92%B0%E5%A2%83%E3%81%B8%E3%81%AE%E4%BB%AE%E6%83%B3%E3%83%9E%E3%82%B7%E3%83%B3%E3%81%AE%E7%A7%BB%E8%A1%8C%E6%96%B9%E6%B3%95%5D%28https%3A%2F%2Fjpaztech.github.io%2Fblog%2Farchive%2Fmigration_arm_to_arm%2F%29%0A*+Content+Source%3A+%5Barticles%2Farchive%2Fmigration_arm_to_arm.md%5D%28https%3A%2F%2Fgithub.com%2Fjpaztech%2Fblog%2Fblob%2Fmaster%2Farticles%2Farchive%2Fmigration_arm_to_arm.md%29%0A*+Author%3A+" class="article-github-issue-link" target="_blank" rel="noopener noreferrer">feedback</a>
         
-        <a data-url="https://jpaztech.github.io/blog/archive/migration_arm_to_arm/" data-id="ckbm05478000d3usfg3gr41ti" class="article-share-link">共有</a>
+        <a data-url="https://jpaztech.github.io/blog/archive/migration_arm_to_arm/" data-id="ckbmmve2e000dmhsfhjwk6tjr" class="article-share-link">共有</a>
       </div>
     
     <div class="article-entry" itemprop="articleBody">
@@ -176,6 +173,7 @@
 <h3 id="5-仮想マシンを作成します。"><a href="#5-仮想マシンを作成します。" class="headerlink" title="5. 仮想マシンを作成します。"></a>5. 仮想マシンを作成します。</h3><p>コピーした VHD ファイルをもとに、Azure PowerShell を使用して、仮想マシンを作成します。</p>
 <p>特殊化 VHD ファイルから仮想マシンを ARM 環境にデプロイする為の Azure PowerShell は以下ブログにて、公開しております。<br><a href="https://blogs.technet.microsoft.com/jpaztech/2017/05/24/deployfromspecializedvhd-powershell/" target="_blank" rel="noopener">特殊化 VHD ファイルから ARM 環境へ仮想マシンをデプロイする Azure PowerShell</a></p>
 
+      
       
     </div>
     <footer class="article-footer">
@@ -300,15 +298,6 @@
     
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-
-
-  
-<link rel="stylesheet" href="../../fancybox/jquery.fancybox.css">
-
-  
-<script src="../../fancybox/jquery.fancybox.pack.js"></script>
-
-
 
 
 <script src="../../js/script.js"></script>

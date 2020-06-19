@@ -428,7 +428,7 @@ body {
   font-size: 14px;
   width: 14px;
   height: 14px;
-  padding: 20px 15px;
+  padding: 18px 15px /*edited*/;
   position: relative;
   cursor: pointer;
 }
@@ -470,8 +470,7 @@ body {
   top: 15px;
   width: 150px;
   height: 30px;
-  right: -150px;
-  opacity: 0;
+  right: 20px;
   -webkit-transition: 0.2s ease-out;
   -moz-transition: 0.2s ease-out;
   -ms-transition: 0.2s ease-out;
@@ -493,10 +492,10 @@ body {
   left: 0;
   right: 0;
   background: #fff;
-  padding: 5px 15px;
+  padding: 2px 15px;
   border-radius: 15px;
-  -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.3);
-  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  border: 1px #737373 solid;
+/*box-shadow: 0 0 10px rgba(0, 0, 0, 0.3)*/
 }
 .search-form-input {
   border: none;
@@ -512,7 +511,7 @@ body {
 }
 .search-form-submit {
   position: absolute;
-  top: 50%;
+  top: 40% /*edited*/;
   right: 10px;
   margin-top: -7px;
   font: 13px font-icon;
@@ -594,10 +593,26 @@ a.article-share:hover {
   -ms-transition: color 0.2s;
   transition: color 0.2s;
 }
-.article-readmore {
-  width: 100%;
-  margin: 0 !important;
-  text-align: right;
+.article-readmore,
+width: 100% {
+  margin: 1.6em 0 !important;
+/*text-align: right*/
+}
+.article-readmore a {
+  display: inline-block;
+  line-height: 1em;
+  padding: 6px 15px;
+  border-radius: 15px;
+  background: #e6e6e6;
+  color: #737373 !important;
+  text-shadow: 0 1px #fff;
+  text-decoration: none;
+}
+.article-readmore a:hover {
+  background: #0065b3;
+  color: #fff !important;
+  text-decoration: none !important;
+  text-shadow: 0 1px #00518f;
 }
 .article-entry {
   color: #505050;
@@ -631,8 +646,7 @@ a.article-share:hover {
 .article-entry h5,
 .article-entry h6 {
   line-height: 1.1em;
-  margin: 2.2em 0 1.1em 0;
-  color: #f60;
+  margin: 1.1em 0;
 }
 .article-entry a {
   color: #0065b3;
@@ -652,7 +666,8 @@ a.article-share:hover {
   max-width: 100%;
   height: auto;
   display: block;
-  margin: auto;
+/* margin: auto */
+/* [makotsur] delete style 'margin auto = centering style' */
 }
 .article-entry iframe {
   border: none;
@@ -805,6 +820,12 @@ a.article-share:hover {
   content: "\f044";
   font-family: FontAwesome;
   padding-right: 6px;
+}
+.article-disclaimer {
+  font-family: "Segoe UI", "SegoeUI", "Segoe WP", "Helvetica Neue", "Helvetica", "Tahoma", "Arial", sans-serif;
+  font-style: italic;
+  margin: 1.6em 20px;
+  background-color: #f6f6f6;
 }
 #article-nav {
   position: relative;
@@ -1054,20 +1075,6 @@ a.article-share:hover {
   -webkit-column-gap: 10px;
   -moz-column-gap: 10px;
   column-gap: 10px;
-}
-@media screen and (min-width: 480px) and (max-width: 767px) {
-  .archives {
-    -webkit-column-count: 2;
-    -moz-column-count: 2;
-    column-count: 2;
-  }
-}
-@media screen and (min-width: 768px) {
-  .archives {
-    -webkit-column-count: 3;
-    -moz-column-count: 3;
-    column-count: 3;
-  }
 }
 .archive-article {
   -webkit-column-break-inside: avoid;

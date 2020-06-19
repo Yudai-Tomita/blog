@@ -14,7 +14,7 @@
 <meta property="og:description" content="本ポストは 2016 年 9 月 15 日に発生した DNS の問題の日本語抄訳です。正式な文章は英語となりますので、下記を必要に応じてご参照ください。※ 本情報の内容（添付文書、リンク先などを含む）は、作成日時点 (9&#x2F;20 10:00) でのものであり、予告なく変更される場合があります。 公開情報: Azure の状態の履歴https:&#x2F;&#x2F;azure.microsoft.com&#x2F;ja-jp&#x2F;s">
 <meta property="og:locale" content="ja_JP">
 <meta property="article:published_time" content="2016-09-16T09:41:18.000Z">
-<meta property="article:modified_time" content="2019-11-26T12:39:50.000Z">
+<meta property="article:modified_time" content="2020-06-19T19:55:35.000Z">
 <meta property="article:author" content="Japan Azure IaaS Core Support Team">
 <meta property="article:tag" content="Archive">
 <meta property="article:tag" content="DNS">
@@ -29,12 +29,6 @@
   <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
   <link rel="manifest" href="./site.webmanifest">
   <link rel="mask-icon" href="./safari-pinned-tab.svg" color="#5bbad5">
-  
-  <!-- add bing webmaster -->
-  <meta name="msvalidate.01" content="D848E77AC8EE21247E4A391888E3F1A1" />
-  <!-- add google search console -->
-  <meta name="google-site-verification" content="m9df-LKg2Sf2nTSpuo2Uyqf4mQilvJzLijrynIuGQIg" />
-
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="theme-color" content="#ffffff">
   
@@ -66,6 +60,9 @@
           <a id="nav-rss-link" class="nav-icon" href="../../blog/atom.xml" title="RSSフィード"></a>
         
       </nav>
+      <div id="search-form-wrap">
+        <form action="//www.bing.com/search" method="get" accept-charset="UTF-8" name="bing-search" onsubmit="var f=this;if(f['q'].value){var searchUrl =  'https://www.bing.com/search?q=' +  encodeURIComponent(f['q'].value + ' site:' + f['sitesearch'].value) ;window.open(searchUrl, 'blank') };return false;" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="検索"><button type="submit" id="nav-search-btn" class="search-form-submit"></button><input type="hidden" name="sitesearch" value="https://jpaztech.github.io/blog"></form>
+      </div>
     </div>
     <div id="header-title" class="inner">
       <h1 id="logo-wrap">
@@ -103,7 +100,7 @@
         
         <a href="https://github.com/jpaztech/blog/issues/new?title=&body=%0A%0A---%0A%0A%23%23%23%23+Document+Details%0A%0A%E2%9A%A0+*Do+not+edit+this+section.%0A%0A*+ID%3A+8bcab028-a3fe-5b08-93f1-818ee55bc9a8%0A*+%E5%AF%BE%E8%B1%A1%E8%A8%98%E4%BA%8B%3A+%5B2016+%E5%B9%B4+9+%E6%9C%88+15+%E6%97%A5%E3%81%AB%E7%99%BA%E7%94%9F%E3%81%97%E3%81%9F+DNS+%E3%81%AE%E5%95%8F%E9%A1%8C%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6%5D%28https%3A%2F%2Fjpaztech.github.io%2Fblog%2Farchive%2Fdns-2016-09-16%2F%29%0A*+Content+Source%3A+%5Barticles%2Farchive%2Fdns-2016-09-16.md%5D%28https%3A%2F%2Fgithub.com%2Fjpaztech%2Fblog%2Fblob%2Fmaster%2Farticles%2Farchive%2Fdns-2016-09-16.md%29%0A*+Author%3A+" class="article-github-issue-link" target="_blank" rel="noopener noreferrer">feedback</a>
         
-        <a data-url="https://jpaztech.github.io/blog/archive/dns-2016-09-16/" data-id="ckbm05473000a3usf84xt0xvm" class="article-share-link">共有</a>
+        <a data-url="https://jpaztech.github.io/blog/archive/dns-2016-09-16/" data-id="ckbmmve27000amhsfh5t9efb6" class="article-share-link">共有</a>
       </div>
     
     <div class="article-entry" itemprop="articleBody">
@@ -150,6 +147,7 @@
 </ul>
 <p>今回の障害では貴社に多大なご迷惑をおかけしましたことを、改めて心よりお詫び申し上げます。Microsoft Azure のさらなる改善へ向け引き続き努力をしてまいりますので、今後とも何卒宜しくお願い申し上げます。</p>
 
+      
       
     </div>
     <footer class="article-footer">
@@ -274,15 +272,6 @@
     
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-
-
-  
-<link rel="stylesheet" href="../../fancybox/jquery.fancybox.css">
-
-  
-<script src="../../fancybox/jquery.fancybox.pack.js"></script>
-
-
 
 
 <script src="../../js/script.js"></script>
