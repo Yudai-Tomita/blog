@@ -12,7 +12,7 @@
 - [Azure リソースの意図しない削除について](./articles/vm/resource-delete.md)
 
 ## Storage
-- [comming soon](./strage/)
+- [comming soon](./articles/strage/)
 
 ## Network
 - [Azure VM の外部接続 (SNAT) オプション まとめ](./articles/network/snat-options-for-azure-vm.md)
@@ -22,7 +22,7 @@
 - [Azure VM の外部接続 (SNAT) オプション まとめ](./articles/network/snat-options-for-auzre-vm.md)
 
 ## OSS
-- [comming soon](./oss/)
+- [comming soon](./articles/oss/)
 
 ## Other
 - [Azure IaaS における有償 Azure テクニカル サポートの対応範囲](./articles/other/azure_technical_support_explained.md)
