@@ -3,30 +3,30 @@
 [https://jpaztech.github.io/blog/](https://jpaztech.github.io/blog/)
 
 ## Information
-- [comming soon](./information/)
+- [comming soon](./articles/information/)
 
 ## VM
-- [Azure Linux VM の OS ディスク拡張方法](./vm/linux-expand-os-disk.md)
-- [Azure 環境における Windows Server 2019 の日本語の言語パック適用手順について](./vm/win2019-jp-lpk.md)
-- [リソース正常性（Resource Health）アラートの構成方法](./vm/resource-health-alert.md)
-- [Azure リソースの意図しない削除について](./vm/resource-delete.md)
+- [Azure Linux VM の OS ディスク拡張方法](./articles/vm/linux-expand-os-disk.md)
+- [Azure 環境における Windows Server 2019 の日本語の言語パック適用手順について](./articles/vm/win2019-jp-lpk.md)
+- [リソース正常性（Resource Health）アラートの構成方法](./articles/vm/resource-health-alert.md)
+- [Azure リソースの意図しない削除について](./articles/vm/resource-delete.md)
 
 ## Storage
 - [comming soon](./strage/)
 
 ## Network
-- [Azure VM の外部接続 (SNAT) オプション まとめ](./network/snat-options-for-azure-vm.md)
-- [Microsoft Peering 導入時の注意事項](./network/considerations-of-microsoft-peering.md)
-- [Microsoft ピアリングを経由するかどうかの確認方法](./network/judge-via-ms-peering.md)
-- [Application Gateway でサブネットを変更する方法](./network/appgw_change_subnet.md)
-- [Azure VM の外部接続 (SNAT) オプション まとめ](./network/snat-options-for-auzre-vm.md)
+- [Azure VM の外部接続 (SNAT) オプション まとめ](./articles/network/snat-options-for-azure-vm.md)
+- [Microsoft Peering 導入時の注意事項](./articles/network/considerations-of-microsoft-peering.md)
+- [Microsoft ピアリングを経由するかどうかの確認方法](./articles/network/judge-via-ms-peering.md)
+- [Application Gateway でサブネットを変更する方法](./articles/network/appgw_change_subnet.md)
+- [Azure VM の外部接続 (SNAT) オプション まとめ](./articles/network/snat-options-for-auzre-vm.md)
 
 ## OSS
 - [comming soon](./oss/)
 
 ## Other
-- [Azure IaaS における有償 Azure テクニカル サポートの対応範囲](./other/azure_technical_support_explained.md)
-- [なぜ今サポートエンジニアが熱いか](./other/technical_support_engineer_explained.md)
+- [Azure IaaS における有償 Azure テクニカル サポートの対応範囲](./articles/other/azure_technical_support_explained.md)
+- [なぜ今サポートエンジニアが熱いか](./articles/other/technical_support_engineer_explained.md)
 
 ## TechNet Archives
 - [Application Gateway の構成について](./archive/about-application-gateway.md)
