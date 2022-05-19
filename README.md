@@ -6,6 +6,7 @@
 - [comming soon](./articles/information/)
 
 ## VM
+- [マイクロソフト Azure サポートエンジニアが解説する、ディスクバースト完全解説記事！](./articles/vm/disk-burst.md)
 - [既存 VM の OS ディスクのリソース名を変更する](./articles/vm/how-to-change-os-disk-name.md)
 - [VM の再作成により可用性ゾーンを変更する (Azure ポータル編)](./articles/vm/change-availability-zone-from-portal.md)
 - [Azure 環境における Windows Server 2016 にて日本語の言語パック適用ができない (修正展開済み)](./articles/vm/win2016-jp-lpk-issue.md)
