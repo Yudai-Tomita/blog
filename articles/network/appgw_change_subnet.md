@@ -1,6 +1,6 @@
 ---
 title: Application Gateway でサブネットを変更する方法
-date: 2026-03-09 14:00:00 
+date: 2026-03-10 09:00:00 
 tags:
   - Network
   - Application Gateway
@@ -12,7 +12,7 @@ tags:
 >`Cannot change Application Gateway's GatewayIpConfiguration '/subscriptions/<subscriptionName>/resourceGroups/<resourceGroupName>/providers/Microsoft.Network/applicationGateways/<applicationGatewayName>/gatewayIPConfigurations/<gatewayIPConfigName>' subnet property '/subscriptions/<subscriptionName>/resourceGroups/<resourceGroupName>/providers/Microsoft.Network/virtualNetworks/<virtualNetworkName>/subnets/<subnetName>' when the gateway is enabled with NetworkIsolation.`  
 >  
 > EnableApplicationGatewayNetworkIsolation 機能は、[Application Gateway v2 でプライベート デプロイを利用する際に有効化が必要な機能です](https://learn.microsoft.com/ja-jp/azure/application-gateway/application-gateway-private-deployment?tabs=portal)。この機能をサブスクリプションに登録すると、それ以降に作成したすべての Application Gateway v2 で NetworkIsolation が有効化されます。  
-> NetworkIsolation が有効化された Application Gateway v2 ではサブネットの移動はできませんので、上述のエラーが発生した場合は Application Gateway v2 を再作成してください。
+> NetworkIsolation が有効化された Application Gateway v2 ではサブネットの変更はできませんので、上述のエラーが発生した場合は Application Gateway v2 を再作成してください。
 
 こんにちは、Azure テクニカル サポート チームの薄井です。
 今回は Application Gateway V1 および V2 でサブネットを変更する方法についてご紹介します。
