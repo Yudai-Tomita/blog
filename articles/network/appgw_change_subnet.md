@@ -1,6 +1,6 @@
 ---
 title: Application Gateway でサブネットを変更する方法
-date: 2026-03-10 09:00:00 
+date: 2026-03-10 00:00:00 
 tags:
   - Network
   - Application Gateway
