@@ -1,14 +1,11 @@
 ---
 title: Azure ロードバランサー利用時の注意点
-date: 2019-01-29 16:00
+date: 2026-04-07 16:00
 tags:
   - Archive
   - Network
   - Load Balancer
 ---
-
-> [!WARNING]
-> 本記事は、投稿より時間が経過しており、**一部内容が古い可能性があります。**
 
 こんにちは、Azure サポートチームの檜山です。
 
@@ -118,5 +115,13 @@ https://docs.microsoft.com/ja-jp/azure/load-balancer/load-balancer-outbound-rule
 3 についてですが、内部ロードバランサーの場合は送信接続時にフロントエンド IP アドレスで SNAT されない動作となります
 
 ![](./azurelb-tips/IlbDoesntSnat.png)
+
+## ロードバランサーのバックエンド プールに所属する VM で Live Migration が発生し、その後通信に影響が生じる場合がある
+
+ロードバランサー配下の仮想マシンで Live Migration が発生した際、Live Migration の発生前から確立されていた通信について、その後の接続状態や通信の継続可否に影響が生じる場合があります。
+
+本挙動は現行のロードバランサーの制約に基づくものでありますが、すべてのアプリケーションが影響を受けるものではありません。
+
+ただし、Live Migration の前後で同一のセッションを継続して利用し続けるような構成では、通信が正常に継続しない可能性があります。
 
 以上、参考になれば幸いです。
