@@ -111,7 +111,8 @@ Get-AzComputeResourceSku -Location japaneast
 | Standard_DDD | {1, 3} | {**type: Location, locations: japaneast**, type: Zone, locations: japaneast, zones: 1, 2, 3} | ゾーン 1,3 で提供されている。<br>しかしながら、type: Location の Restrictions として、当該リージョンでこの VM サイズのデプロイ自体が制限されております。 |
 
 Resetrictions がある場合は代替のサイズやゾーンのご利用などをご検討いただけますと幸いです。  
-もし Resetrictions の解除が可能であるかをご確認されたい場合は、クォータのその他の要求として、上記の結果と合わせてご相談のお問い合わせをくださいませ。  
+もし Resetrictions の解除が可能であるかをご確認されたい場合は、クォータのその他の要求として上記の結果とご希望の内容を記載いただくことで、ご相談のお問い合わせをいただくことが可能と存じます。  
+他方、お問い合わせいただいたとしても、解除が難しいとの判断となる可能性もございます点、予めご理解いただけますと幸いでございます。  
 
 ![](vm-size-change/re.png)
 
@@ -119,7 +120,7 @@ Resetrictions がある場合は代替のサイズやゾーンのご利用など
   
 ご参考：[提供されている VM SKU の確認 - Azure PowerShell を使用して可用性ゾーン内に仮想マシンを作成する | Microsoft Learn](https://learn.microsoft.com/ja-jp/azure/virtual-machines/windows/create-powershell-availability-zone#check-vm-sku-availability)  
   
-ご参考：[SKU 利用不可エラーを解決する | Microsoft Learn](https://learn.microsoft.com/ja-jp/azure/azure-resource-manager/troubleshooting/error-sku-not-availabley)  
+ご参考：[SKU 利用不可エラーを解決する | Microsoft Learn](https://learn.microsoft.com/ja-jp/azure/azure-resource-manager/troubleshooting/error-sku-not-available)  
 
 ---
 ### ローカル一時ディスクの有無  
